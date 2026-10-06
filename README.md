@@ -85,10 +85,10 @@ const pair = await getRate('USD', 'BTN', { apiKey: 'art_live_...' });
 {
   bank: 'rma',
   name: 'Royal Monetary Authority of Bhutan',
-  rate_date: '2026-09-25',   // Royal Monetary Authority of Bhutan's own publication date
+  rate_date: '2026-10-06',   // Royal Monetary Authority of Bhutan's own publication date
   source: 'USD',
   target: 'BTN',
-  rate: 96.39,
+  rate: 96.73,
   rate_type: 'sell',
   derived: false,
   method: 'published',
@@ -113,10 +113,10 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'rma',
   name: 'Royal Monetary Authority of Bhutan',
-  rate_date: '2026-09-25',
+  rate_date: '2026-10-06',
   rates: [
-    { "base": "USD", "quote": "BTN", "type": "sell", "value": 96.39 },
-    { "base": "USD", "quote": "BTN", "type": "buy", "value": 95.72 },
+    { "base": "USD", "quote": "BTN", "type": "sell", "value": 96.73 },
+    { "base": "USD", "quote": "BTN", "type": "buy", "value": 96.06 },
     // … the rest of the published table (12 currencies vs BTN)
   ],
   disclaimer: '…'
@@ -156,7 +156,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'rma-bhutan-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'BTN', from: '2026-01-01', to: '2026-09-25' },
+  { source: 'USD', target: 'BTN', from: '2026-01-01', to: '2026-10-06' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -169,11 +169,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'BTN',
   from: '2026-01-01',
-  to: '2026-09-25',
+  to: '2026-10-06',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-25', rate: 96.39, rate_type: 'sell', derived: false, method: 'published' },
+    { date: '2026-10-06', rate: 96.73, rate_type: 'sell', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
