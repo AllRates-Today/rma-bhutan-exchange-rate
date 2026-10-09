@@ -40,34 +40,34 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 Today's full Royal Monetary Authority of Bhutan table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-08** by Royal Monetary Authority of Bhutan — 24 rates. Updated 2026-10-08.
+Published **2026-10-09** by Royal Monetary Authority of Bhutan — 24 rates. Updated 2026-10-09.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | BTN | buy | 67.29 |
-| AUD | BTN | sell | 67.73 |
-| CAD | BTN | buy | 67.87 |
-| CAD | BTN | sell | 68.36 |
-| CHF | BTN | buy | 115.85 |
-| CHF | BTN | sell | 116.69 |
-| DKK | BTN | buy | 14.46 |
-| DKK | BTN | sell | 14.56 |
-| EUR | BTN | buy | 108.1 |
-| EUR | BTN | sell | 108.84 |
-| GBP | BTN | buy | 127.75 |
-| GBP | BTN | sell | 128.59 |
+| AUD | BTN | buy | 67.13 |
+| AUD | BTN | sell | 67.58 |
+| CAD | BTN | buy | 67.68 |
+| CAD | BTN | sell | 68.17 |
+| CHF | BTN | buy | 115.73 |
+| CHF | BTN | sell | 116.57 |
+| DKK | BTN | buy | 14.44 |
+| DKK | BTN | sell | 14.55 |
+| EUR | BTN | buy | 107.96 |
+| EUR | BTN | sell | 108.7 |
+| GBP | BTN | buy | 127.36 |
+| GBP | BTN | sell | 128.21 |
 | HKD | BTN | buy | 12.3 |
 | HKD | BTN | sell | 12.39 |
-| JPY | BTN | buy | 0.6096 |
-| JPY | BTN | sell | 0.6139 |
-| NOK | BTN | buy | 10.09 |
-| NOK | BTN | sell | 10.17 |
-| SEK | BTN | buy | 9.62 |
-| SEK | BTN | sell | 9.69 |
-| SGD | BTN | buy | 75.43 |
-| SGD | BTN | sell | 75.96 |
-| USD | BTN | buy | 96.54 |
-| USD | BTN | sell | 97.2 |
+| JPY | BTN | buy | 0.61 |
+| JPY | BTN | sell | 0.6143 |
+| NOK | BTN | buy | 10.08 |
+| NOK | BTN | sell | 10.15 |
+| SEK | BTN | buy | 9.63 |
+| SEK | BTN | sell | 9.71 |
+| SGD | BTN | buy | 75.31 |
+| SGD | BTN | sell | 75.83 |
+| USD | BTN | buy | 96.55 |
+| USD | BTN | sell | 97.22 |
 
 Source: [Official rates published by RMA, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/rma/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
