@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/rma-bhutan-exchange-rate.svg)](https://github.com/AllRates-Today/rma-bhutan-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/rma-bhutan-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/BTN today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Frma%3Fsource%3DUSD%26target%3DBTN&query=%24.rate&label=USD%2FBTN%20published%20by%20Royal%20Monetary%20Authority%20of%20Bhutan&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/rma/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Frma%3Fsource%3DUSD%26target%3DBTN&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/rma/)
 
 **Official Royal Monetary Authority of Bhutan (Bhutan) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Royal Monetary Authority of Bhutan itself prints, every business day.**
 
@@ -32,6 +34,43 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Royal Monetary Authority of Bhutan table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-08** by Royal Monetary Authority of Bhutan — 24 rates. Updated 2026-10-08.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AUD | BTN | buy | 67.29 |
+| AUD | BTN | sell | 67.73 |
+| CAD | BTN | buy | 67.87 |
+| CAD | BTN | sell | 68.36 |
+| CHF | BTN | buy | 115.85 |
+| CHF | BTN | sell | 116.69 |
+| DKK | BTN | buy | 14.46 |
+| DKK | BTN | sell | 14.56 |
+| EUR | BTN | buy | 108.1 |
+| EUR | BTN | sell | 108.84 |
+| GBP | BTN | buy | 127.75 |
+| GBP | BTN | sell | 128.59 |
+| HKD | BTN | buy | 12.3 |
+| HKD | BTN | sell | 12.39 |
+| JPY | BTN | buy | 0.6096 |
+| JPY | BTN | sell | 0.6139 |
+| NOK | BTN | buy | 10.09 |
+| NOK | BTN | sell | 10.17 |
+| SEK | BTN | buy | 9.62 |
+| SEK | BTN | sell | 9.69 |
+| SGD | BTN | buy | 75.43 |
+| SGD | BTN | sell | 75.96 |
+| USD | BTN | buy | 96.54 |
+| USD | BTN | sell | 97.2 |
+
+Source: [Official rates published by RMA, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/rma/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
