@@ -126,10 +126,10 @@ const pair = await getRate('USD', 'BTN', { apiKey: 'art_live_...' });
 {
   bank: 'rma',
   name: 'Royal Monetary Authority of Bhutan',
-  rate_date: '2026-10-12',   // Royal Monetary Authority of Bhutan's own publication date
+  rate_date: '2026-10-14',   // Royal Monetary Authority of Bhutan's own publication date
   source: 'USD',
   target: 'BTN',
-  rate: 97.16,
+  rate: 95.71,
   rate_type: 'sell',
   derived: false,
   method: 'published',
@@ -154,10 +154,10 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'rma',
   name: 'Royal Monetary Authority of Bhutan',
-  rate_date: '2026-10-12',
+  rate_date: '2026-10-14',
   rates: [
-    { "base": "USD", "quote": "BTN", "type": "sell", "value": 97.16 },
-    { "base": "USD", "quote": "BTN", "type": "buy", "value": 96.49 },
+    { "base": "USD", "quote": "BTN", "type": "sell", "value": 95.71 },
+    { "base": "USD", "quote": "BTN", "type": "buy", "value": 95.05 },
     // … the rest of the published table (12 currencies vs BTN)
   ],
   disclaimer: '…'
@@ -197,7 +197,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'rma-bhutan-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'BTN', from: '2026-01-01', to: '2026-10-12' },
+  { source: 'USD', target: 'BTN', from: '2026-01-01', to: '2026-10-14' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -210,11 +210,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'BTN',
   from: '2026-01-01',
-  to: '2026-10-12',
+  to: '2026-10-14',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-10-12', rate: 97.16, rate_type: 'sell', derived: false, method: 'published' },
+    { date: '2026-10-14', rate: 95.71, rate_type: 'sell', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -333,9 +333,9 @@ getRate('USD', 'BTN', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 
 Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
 
-- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/rma.csv`)
+- Hugging Face: [AllRatesToday/central-bank-exchange-rates](https://huggingface.co/datasets/AllRatesToday/central-bank-exchange-rates) — one CSV per institution (`rates/rma.csv`)
 - Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
-- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/rma/latest.json`
+- Raw JSON on GitHub: `https://raw.githubusercontent.com/AllRates-Today/central-bank-exchange-rates/main/data/rma/latest.json`
 
 ## 🔗 Links
 
