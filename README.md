@@ -42,34 +42,34 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-15** by Royal Monetary Authority of Bhutan — 24 rates. Updated 2026-10-15.
+Published **2026-10-16** by Royal Monetary Authority of Bhutan — 24 rates. Updated 2026-10-16.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | BTN | buy | 66.56 |
-| AUD | BTN | sell | 67 |
-| CAD | BTN | buy | 66.77 |
-| CAD | BTN | sell | 67.26 |
-| CHF | BTN | buy | 113.87 |
-| CHF | BTN | sell | 114.7 |
-| DKK | BTN | buy | 14.21 |
-| DKK | BTN | sell | 14.31 |
-| EUR | BTN | buy | 106.25 |
-| EUR | BTN | sell | 106.98 |
-| GBP | BTN | buy | 125.95 |
-| GBP | BTN | sell | 126.78 |
-| HKD | BTN | buy | 12.09 |
-| HKD | BTN | sell | 12.18 |
-| JPY | BTN | buy | 0.599 |
-| JPY | BTN | sell | 0.6033 |
-| NOK | BTN | buy | 10 |
-| NOK | BTN | sell | 10.08 |
-| SEK | BTN | buy | 9.52 |
-| SEK | BTN | sell | 9.6 |
-| SGD | BTN | buy | 74.05 |
-| SGD | BTN | sell | 74.56 |
-| USD | BTN | buy | 94.92 |
-| USD | BTN | sell | 95.58 |
+| AUD | BTN | buy | 65.6 |
+| AUD | BTN | sell | 66.04 |
+| CAD | BTN | buy | 66.75 |
+| CAD | BTN | sell | 67.23 |
+| CHF | BTN | buy | 114.29 |
+| CHF | BTN | sell | 115.1 |
+| DKK | BTN | buy | 14.23 |
+| DKK | BTN | sell | 14.33 |
+| EUR | BTN | buy | 106.37 |
+| EUR | BTN | sell | 107.08 |
+| GBP | BTN | buy | 125.76 |
+| GBP | BTN | sell | 126.59 |
+| HKD | BTN | buy | 12.08 |
+| HKD | BTN | sell | 12.17 |
+| JPY | BTN | buy | 0.6011 |
+| JPY | BTN | sell | 0.6054 |
+| NOK | BTN | buy | 9.96 |
+| NOK | BTN | sell | 10.03 |
+| SEK | BTN | buy | 9.51 |
+| SEK | BTN | sell | 9.57 |
+| SGD | BTN | buy | 73.95 |
+| SGD | BTN | sell | 74.47 |
+| USD | BTN | buy | 94.82 |
+| USD | BTN | sell | 95.47 |
 
 Source: [Official rates published by RMA, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/rma/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
