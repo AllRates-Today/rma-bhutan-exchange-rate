@@ -33,43 +33,46 @@ const r = await fetch('https://allratestoday.com/api/open/central-bank/rma').the
 console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
 ```
 
-The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables and history.
 
 ## 📈 Latest published table
 
 [![Latest Royal Monetary Authority of Bhutan table](https://allratestoday.com/api/open/central-bank/rma/table.svg)](https://allratestoday.com/central-bank-rates-api/rma/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-16** by Royal Monetary Authority of Bhutan — 24 rates. Updated 2026-10-16.
+<details>
+<summary>Table as text: published 2026-10-19 by Royal Monetary Authority of Bhutan — 24 rates. Updated 2026-10-19.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | BTN | buy | 65.6 |
-| AUD | BTN | sell | 66.04 |
-| CAD | BTN | buy | 66.75 |
-| CAD | BTN | sell | 67.23 |
-| CHF | BTN | buy | 114.29 |
-| CHF | BTN | sell | 115.1 |
-| DKK | BTN | buy | 14.23 |
-| DKK | BTN | sell | 14.33 |
-| EUR | BTN | buy | 106.37 |
-| EUR | BTN | sell | 107.08 |
-| GBP | BTN | buy | 125.76 |
-| GBP | BTN | sell | 126.59 |
-| HKD | BTN | buy | 12.08 |
-| HKD | BTN | sell | 12.17 |
-| JPY | BTN | buy | 0.6011 |
-| JPY | BTN | sell | 0.6054 |
-| NOK | BTN | buy | 9.96 |
-| NOK | BTN | sell | 10.03 |
-| SEK | BTN | buy | 9.51 |
-| SEK | BTN | sell | 9.57 |
-| SGD | BTN | buy | 73.95 |
-| SGD | BTN | sell | 74.47 |
-| USD | BTN | buy | 94.82 |
-| USD | BTN | sell | 95.47 |
+| AUD | BTN | buy | 65.96 |
+| AUD | BTN | sell | 66.38 |
+| CAD | BTN | buy | 66.91 |
+| CAD | BTN | sell | 67.38 |
+| CHF | BTN | buy | 114.97 |
+| CHF | BTN | sell | 115.83 |
+| DKK | BTN | buy | 14.26 |
+| DKK | BTN | sell | 14.36 |
+| EUR | BTN | buy | 106.63 |
+| EUR | BTN | sell | 107.35 |
+| GBP | BTN | buy | 126.33 |
+| GBP | BTN | sell | 127.17 |
+| HKD | BTN | buy | 12.07 |
+| HKD | BTN | sell | 12.15 |
+| JPY | BTN | buy | 0.5998 |
+| JPY | BTN | sell | 0.604 |
+| NOK | BTN | buy | 10.02 |
+| NOK | BTN | sell | 10.11 |
+| SEK | BTN | buy | 9.57 |
+| SEK | BTN | sell | 9.64 |
+| SGD | BTN | buy | 74.05 |
+| SGD | BTN | sell | 74.57 |
+| USD | BTN | buy | 94.73 |
+| USD | BTN | sell | 95.39 |
+
+</details>
 
 Source: [Official rates published by RMA, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/rma/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
@@ -343,7 +346,8 @@ Need the whole archive rather than an API call? The same published tables are mi
 - [All central bank sources](https://allratestoday.com/central-bank-rates-api/)
 - [Package docs on the site](https://allratestoday.com/docs/sdk/rma-bhutan-exchange-rate/) · [ERP integration guides](https://allratestoday.com/docs/integrations/)
 - [API documentation](https://allratestoday.com/docs/#central-bank) · [Interactive reference](https://allratestoday.com/api-reference/) · [Methodology](https://allratestoday.com/official-rates-methodology/)
-- [Register (free)](https://allratestoday.com/register) · [Pricing](https://allratestoday.com/pricing/)
+- [Register (Free)](https://allratestoday.com/register) · [Dashboard](https://allratestoday.com/profile) · [Pricing](https://allratestoday.com/pricing/)
+- [Status](https://allratestoday.com/status)
 - [GitHub](https://github.com/AllRates-Today/rma-bhutan-exchange-rate)
 
 ## 📜 License
