@@ -47,34 +47,34 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-28 by Royal Monetary Authority of Bhutan — 24 rates. Updated 2026-10-28.</summary>
+<summary>Table as text: published 2026-10-29 by Royal Monetary Authority of Bhutan — 24 rates. Updated 2026-10-29.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | BTN | buy | 66.68 |
-| AUD | BTN | sell | 67.14 |
-| CAD | BTN | buy | 67.67 |
-| CAD | BTN | sell | 68.15 |
-| CHF | BTN | buy | 114.51 |
-| CHF | BTN | sell | 115.32 |
+| AUD | BTN | buy | 66.79 |
+| AUD | BTN | sell | 67.21 |
+| CAD | BTN | buy | 67.56 |
+| CAD | BTN | sell | 68.03 |
+| CHF | BTN | buy | 114.38 |
+| CHF | BTN | sell | 115.21 |
 | DKK | BTN | buy | 14.14 |
 | DKK | BTN | sell | 14.24 |
-| EUR | BTN | buy | 105.71 |
-| EUR | BTN | sell | 106.42 |
-| GBP | BTN | buy | 126.35 |
-| GBP | BTN | sell | 127.21 |
-| HKD | BTN | buy | 12.09 |
-| HKD | BTN | sell | 12.18 |
-| JPY | BTN | buy | 0.6014 |
-| JPY | BTN | sell | 0.6057 |
+| EUR | BTN | buy | 105.7 |
+| EUR | BTN | sell | 106.41 |
+| GBP | BTN | buy | 126.2 |
+| GBP | BTN | sell | 127.06 |
+| HKD | BTN | buy | 12.11 |
+| HKD | BTN | sell | 12.19 |
+| JPY | BTN | buy | 0.6018 |
+| JPY | BTN | sell | 0.6061 |
 | NOK | BTN | buy | 10.18 |
-| NOK | BTN | sell | 10.26 |
-| SEK | BTN | buy | 9.52 |
-| SEK | BTN | sell | 9.59 |
-| SGD | BTN | buy | 74.02 |
-| SGD | BTN | sell | 74.57 |
-| USD | BTN | buy | 94.88 |
-| USD | BTN | sell | 95.54 |
+| NOK | BTN | sell | 10.25 |
+| SEK | BTN | buy | 9.55 |
+| SEK | BTN | sell | 9.62 |
+| SGD | BTN | buy | 74.07 |
+| SGD | BTN | sell | 74.62 |
+| USD | BTN | buy | 95 |
+| USD | BTN | sell | 95.65 |
 
 </details>
 
@@ -240,6 +240,7 @@ The Royal Monetary Authority of Bhutan publishes daily telegraphic-transfer buyi
 
 - Publisher's own page: [Exchange rates](https://www.rma.org.bt/exchangeRates/) · [www.rma.org.bt](https://www.rma.org.bt)
 - Publication: every business day; the exact schedule, freshness status and any current delay are on the [Royal Monetary Authority of Bhutan rates page](https://allratestoday.com/central-bank-rates-api/rma/)
+- In the API: usually by **15:00 UTC** (measured over the last 10 publications). Schedule a sync at or after that time and retry hourly until `rate_date` moves; every response carries the same figure as `available_by_utc` — see [when to poll](https://allratestoday.com/docs/#when-to-poll)
 - Values are stored unmodified, with the publisher's own `rate_date` on every row — see the [methodology](https://allratestoday.com/official-rates-methodology/)
 
 ## 🧭 Reading the numbers
