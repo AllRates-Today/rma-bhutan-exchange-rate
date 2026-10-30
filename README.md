@@ -24,57 +24,42 @@
 
 Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
 
-## ⚡ Try it without a key
-
-The latest Royal Monetary Authority of Bhutan table is also served keyless, CORS-open and edge-cached, for evaluation, embeds and AI agents:
-
-```bash
-curl "https://allratestoday.com/api/open/central-bank/rma?source=USD&target=BTN"
-```
-
-```js
-const r = await fetch('https://allratestoday.com/api/open/central-bank/rma').then((x) => x.json());
-console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
-```
-
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
-
 ## 📈 Latest published table
 
 [![Latest Royal Monetary Authority of Bhutan table](https://allratestoday.com/api/open/central-bank/rma/table.svg)](https://allratestoday.com/central-bank-rates-api/rma/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-29 by Royal Monetary Authority of Bhutan — 24 rates. Updated 2026-10-29.</summary>
+<summary>Table as text: published 2026-10-30 by Royal Monetary Authority of Bhutan — 24 rates. Updated 2026-10-30.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | BTN | buy | 66.79 |
-| AUD | BTN | sell | 67.21 |
-| CAD | BTN | buy | 67.56 |
-| CAD | BTN | sell | 68.03 |
-| CHF | BTN | buy | 114.38 |
-| CHF | BTN | sell | 115.21 |
-| DKK | BTN | buy | 14.14 |
-| DKK | BTN | sell | 14.24 |
-| EUR | BTN | buy | 105.7 |
-| EUR | BTN | sell | 106.41 |
-| GBP | BTN | buy | 126.2 |
-| GBP | BTN | sell | 127.06 |
+| AUD | BTN | buy | 66.85 |
+| AUD | BTN | sell | 67.26 |
+| CAD | BTN | buy | 67.89 |
+| CAD | BTN | sell | 68.36 |
+| CHF | BTN | buy | 114.62 |
+| CHF | BTN | sell | 115.44 |
+| DKK | BTN | buy | 14.15 |
+| DKK | BTN | sell | 14.25 |
+| EUR | BTN | buy | 105.79 |
+| EUR | BTN | sell | 106.52 |
+| GBP | BTN | buy | 126.49 |
+| GBP | BTN | sell | 127.34 |
 | HKD | BTN | buy | 12.11 |
 | HKD | BTN | sell | 12.19 |
-| JPY | BTN | buy | 0.6018 |
-| JPY | BTN | sell | 0.6061 |
-| NOK | BTN | buy | 10.18 |
-| NOK | BTN | sell | 10.25 |
-| SEK | BTN | buy | 9.55 |
-| SEK | BTN | sell | 9.62 |
-| SGD | BTN | buy | 74.07 |
-| SGD | BTN | sell | 74.62 |
-| USD | BTN | buy | 95 |
-| USD | BTN | sell | 95.65 |
+| JPY | BTN | buy | 0.6015 |
+| JPY | BTN | sell | 0.6057 |
+| NOK | BTN | buy | 10.23 |
+| NOK | BTN | sell | 10.3 |
+| SEK | BTN | buy | 9.6 |
+| SEK | BTN | sell | 9.67 |
+| SGD | BTN | buy | 74.16 |
+| SGD | BTN | sell | 74.68 |
+| USD | BTN | buy | 95.02 |
+| USD | BTN | sell | 95.68 |
 
 </details>
 
