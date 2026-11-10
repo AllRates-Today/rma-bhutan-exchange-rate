@@ -32,34 +32,34 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-11-09 by Royal Monetary Authority of Bhutan — 24 rates. Updated 2026-11-09.</summary>
+<summary>Table as text: published 2026-11-10 by Royal Monetary Authority of Bhutan — 24 rates. Updated 2026-11-10.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | BTN | buy | 64.36 |
-| AUD | BTN | sell | 64.78 |
-| CAD | BTN | buy | 66.53 |
+| AUD | BTN | buy | 64.69 |
+| AUD | BTN | sell | 65.13 |
+| CAD | BTN | buy | 66.55 |
 | CAD | BTN | sell | 67.02 |
-| CHF | BTN | buy | 114.44 |
-| CHF | BTN | sell | 115.26 |
-| DKK | BTN | buy | 14 |
-| DKK | BTN | sell | 14.1 |
-| EUR | BTN | buy | 104.65 |
-| EUR | BTN | sell | 105.36 |
-| GBP | BTN | buy | 125.41 |
-| GBP | BTN | sell | 126.25 |
+| CHF | BTN | buy | 114.55 |
+| CHF | BTN | sell | 115.37 |
+| DKK | BTN | buy | 14.03 |
+| DKK | BTN | sell | 14.13 |
+| EUR | BTN | buy | 104.88 |
+| EUR | BTN | sell | 105.6 |
+| GBP | BTN | buy | 125.74 |
+| GBP | BTN | sell | 126.58 |
 | HKD | BTN | buy | 11.95 |
 | HKD | BTN | sell | 12.03 |
-| JPY | BTN | buy | 0.5915 |
-| JPY | BTN | sell | 0.5958 |
-| NOK | BTN | buy | 9.94 |
-| NOK | BTN | sell | 10.02 |
-| SEK | BTN | buy | 9.48 |
-| SEK | BTN | sell | 9.55 |
-| SGD | BTN | buy | 73.11 |
-| SGD | BTN | sell | 73.62 |
-| USD | BTN | buy | 93.68 |
-| USD | BTN | sell | 94.33 |
+| JPY | BTN | buy | 0.5929 |
+| JPY | BTN | sell | 0.597 |
+| NOK | BTN | buy | 9.99 |
+| NOK | BTN | sell | 10.06 |
+| SEK | BTN | buy | 9.54 |
+| SEK | BTN | sell | 9.6 |
+| SGD | BTN | buy | 73.22 |
+| SGD | BTN | sell | 73.73 |
+| USD | BTN | buy | 93.7 |
+| USD | BTN | sell | 94.35 |
 
 </details>
 
